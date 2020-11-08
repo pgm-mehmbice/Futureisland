@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Noto+Sans&display=swap');
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.exitButton {
+  font-family: 'Fredoka One', cursive;
+  background-color: rgba(255, 255, 255, 0%);
+  color: white;
+  font-size: 3rem;
+  border: 0;
+  padding: 0.5rem;
+  width: 2rem;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 55rem;
+}
+
+.exitButton:hover {
+  color: blue;
+}
+
+.showArtistDetails {
+  background-color: white;
+  width: 67.4rem;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow: auto;
+}
+
+.artistDetailBackground {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 40%);
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.navbar {
+  background: url(https://assets.rockwerchter.be/layout/frontend/img/svg/pattern-2021.svg);
+  height: 17.5rem;
+  position: relative;
+  border: 1px solid green;
+}
+
+.logo {
+  font-family: 'Staatliches', cursive;
+  font-size: 4rem;
+  color: white;
+  width: max-content;
+  position: relative;
+  left: 0rem;
+  top: -1.5rem;
+  list-style: none;
+  line-height: 51px;
+}
+
+.logo li:first-child {
+  color: cyan;
+}
+
+.listbar {
+  background: rgb(110,0,255);
+  background: linear-gradient(90deg, rgba(110,0,255,1) 30%, rgba(255,123,0,1) 100%);
+  display: flex;
+  transition: 1s;
+  max-width: 100%;
+  margin-top: 3rem;
+  height: 5rem;
+  width: 72rem;
+  float: right;
+  margin-right: 1rem;
+  position: absolute;
+  right: 7rem;
+  top: 3.5rem;
+  justify-content: space-between;
+}
+
+.listbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.listbar a:hover {
+  color: black;
+}
+
+.listbar a li:nth-child() {
+  color: black;
+}
+
+.listbar li:last-child {
+  background: black;
+  padding: 12px;
+  margin-top: 10px;
+}
+
+.list {
+  font-family: 'Staatliches', cursive;
+  display: flex;
+  font-size: 2.1rem;
+  height: max-content;
+  margin-top: 1.3rem;
+  margin-right: 1rem;
+  color: white;
+}
+
+.artists {
+  /* position: absolute; */
+  z-index: -1;
+}
+
+.artist {
+  height: 25rem;
+  width: 39rem;
+  background-repeat: no-repeat;
+  font-family: 'Staatliches', cursive;
+  flex-wrap: wrap;
+  color: yellowgreen;
+  background-size: 100%;
+  box-sizing: inherit;
+  display: -webkit-inline-box;
+  margin-top: 2rem;
+  margin-left: 2.2rem;
+
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+}
+
+.artist:hover {
+  animation-name: pulse;
+  animation-timing-function: ease-in-out;
+}
+
+.dayPlaceArtist {
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 26rem;
+  margin-left: 1rem;
+  margin-top: 18.4rem;
+}
+
+h4 {
+  background-color: blue;
+  color: white;
+  font-size: 1.2rem;
+  height: max-content;
+  flex-direction: column-reverse;
+  padding: 0.1rem 0.3rem;
+  margin-bottom: 0;
+}
+
+h3 {
+  background-color: white;
+  color: black;
+  font-size: 1.3rem;
+  height: max-content;
+  flex-direction: column-reverse;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  margin-bottom: 0;
+  margin-top: 1.5rem;
+}
+
+h2 {
+  background: rgb(254,85,47);
+  background: linear-gradient(90deg, rgba(254,85,47,1) 0%, rgba(119,0,255,1) 50%, rgba(0,151,255,1) 100%);
+  color: white;
+  font-size: 2rem;
+  height: 2rem;
+  width: max-content;
+  padding: 10px;
+  padding-top: 0;
+  text-align: center;
+  margin: 0;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+h2:hover {
+  text-decoration: underline;
+}
+
+.timer {
+  background: black;
+  color: white;
+  font-size: 5rem;
+  width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+footer {
+  background: darkblue;
+  height: 62rem;
+}
+
+.mediabar1 {
+  display: flex;
+  padding-top: 11rem;
+  padding-left: 6rem;
+  list-style: none;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  margin-right: 3rem;
+  background: black;
+  color: white;
+}
+
+.fa-twitter {
+  margin-right: 3rem;
+  background: black;
+  color: white;
+}
+
+.fa-instagram {
+  margin-right: 3rem;
+  background: black;
+  color: white;
+}
+
+.fa-spotify {
+  margin-right: 3rem;
+  background: black;
+  color: white;
+}
+
+.fa-youtube {
+  background: black;
+  color: white;
+}
+
+.all {
+  position: relative;
+  margin: 0rem;
+  font-size: 2rem;
+  display: flex;
+  color: white;
+  margin: 9rem;
+}
+
+.info {
+  padding-right: 14rem;
+}
+
+.infoTextTitle {
+  list-style: none;
+  font-family: 'Staatliches', cursive;
+}
+
+.knowMore {
+  padding-right: 11rem;
+
+}
+
+.knowMoreTextTitle {
+  list-style: none;
+  font-family: 'Staatliches', cursive;
+}
+
+.newsLetterTextTitle {
+  list-style: none;
+  font-family: 'Staatliches', cursive;
+}
+
+.newsLetterText {
+  list-style: none;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  padding: 0;
+}
+
+.text1 {
+  list-style: none;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.5rem;
+  color: rgb(189, 183, 183);
+  line-height: 40px;
+}
+
+.text1 a {
+  color: rgb(189, 183, 183);
+  text-decoration: none;
+}
+
+.text1 a:hover {
+  color: white;
+}
+
+.fa-subscribe {
+  color: blue;
+  padding: 0;
+  margin: -1rem;
+  width: 8rem;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.4rem;
+}
+
+input[type="text"] {
+  background: none;
+  height: 3rem;
+  width: 18rem;
+  border: 3px solid white;
+}
+
+button {
+  background-color: white;
+  height: 3rem;
+  width: 10rem;
+  border: 3px solid white;
+}
+
+.showArtistDetails h4 {
+  background-color: blue;
+  font-family: 'Staatliches', cursive;
+  color: white;
+  font-size: 2.5rem;
+  padding: 0.2rem;
+  height: max-content;
+  flex-direction: column-reverse;
+  margin-top: 35.5rem;
+  margin-left: 1rem;
+  margin-bottom: 0;
+  position: absolute;
+}
+
+.showArtistDetails h3 {
+  background-color: white;
+  font-family: 'Staatliches', cursive;
+  color: black;
+  font-size: 2.5rem;
+  padding: 0.2rem;
+  height: max-content;
+  flex-direction: column-reverse;
+  margin-top: 35.5rem;
+  margin-bottom: 0;
+  margin-left: 11rem;
+  position: absolute;
+}
+
+.showArtistDetails h2 {
+  font-family: 'Staatliches', cursive;
+  margin-top: 39rem;
+  position: absolute;
+  font-size: 4rem;
+  height: 4rem;
+  margin-left: 1rem;
+}
+
+.showArtistDetails img {
+  width: 100%;
+  height: 44rem;
+}
+
+.showArtistDetails p {
+  font-family: 'Staatliches', cursive;
+  color: gray;
+  margin: 3rem;
+  font-size: 1.2rem;
+}
+
+iframe {
+  margin-left: 8rem;
+  margin-bottom: 3rem;
+}
+
+.showArtistDetails ul p {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.showArtistDetails ul{
+  list-style: none;
+
+}
+
+.showArtistDetails a {
+  text-decoration: none;
+  color: blue;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.6rem;
+}
+
+.showArtistDetails a:hover {
+  text-decoration: underline;
+}
